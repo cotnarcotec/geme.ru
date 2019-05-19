@@ -10,14 +10,18 @@
 		.header {
 			width: 100%;
 			height: 100px;
-			background: yellow;
+			background: #000000;
 			box-sizing: border-box;
 		}
 		.logo {
+			letter-spacing:7px;
+			font-family: Geneva, Arial, Helvetica, sans-serif;
+			font-size: 380%;
 			line-height: 100px;
 			width: 300px;
 			float: left;
 			margin-left: 10px;
+			color: #DAA520;
 		}
 		.menu {
 			float: right;
@@ -32,26 +36,32 @@
 			clear: both;
 		}
 		.game-list {
-			background: green;
+			background:#0d0d0d;
 			padding: 10px;
 			box-sizing: border-box;
 		}
 		.game {
+			padding-bottom: 20px; 
+			border:2px solid red;
+			width: 120px;
+			height:140px;
 			float: left;
 			margin: 10px;
+			color: #DAA520;	
 		}
 		.content {
 			width: 100%;
 		}
 		.left-bar {
-			background: red;
+			background: #0d0d0d;
 			width: 25%;
 			float: left;
 			padding: 10px;
 			box-sizing: border-box;
 		}
-		.main {
-			background: blue;
+		.nevs {
+			color: 
+			background: #0d0d0d;
 			width: 75%;
 			float: right;
 			padding: 10px;
@@ -61,7 +71,7 @@
 </head>
 <body>
 	<div class="header">
-		<div class="logo">My logo</div>
+		<div class="logo">geme.ru</div>
 		<div class="menu">
 			<div class="menu-item">Link 1</div>
 			<div class="menu-item">Link 2</div>
@@ -69,9 +79,9 @@
 	</div>
 
 	<div class="game-list">
-		<div class="game">Game 1</div>
-		<div class="game">Game 1</div>
-		<div class="game">Game 1</div>
+		<img src="./imiges/GTAV_Official_Cover_Art.jpg" class="game">Game 1</img>
+		<img src="./imiges/maxresdefault.jpg" class="game">Game 1</img>
+		<img src="./imiges/far-cry-5-gold-edition-cover.jpg" class="game">Game 1</img>
 		<div class="clearfix"></div>
 	</div>
 
@@ -82,7 +92,7 @@
 			Something <br>
 			Something <br>
 		</div>
-		<div class="main">Main</div>
+		<div class="nevs">nevs</div>
 		<div class="clearfix"></div>
 	</div>
 </body>
