@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.header {
+			width: 100%;
+			height: 100px;
+			background: yellow;
+			box-sizing: border-box;
+		}
+		.logo {
+			line-height: 100px;
+			width: 300px;
+			float: left;
+			margin-left: 10px;
+		}
+		.menu {
+			float: right;
+			line-height: 100px;
+			margin-right: 10px;
+		}
+		.menu-item {
+			float: left;
+			margin: 0 10px;
+		}
+		.clearfix {
+			clear: both;
+		}
+		.game-list {
+			background: green;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.game {
+			float: left;
+			margin: 10px;
+		}
+		.content {
+			width: 100%;
+		}
+		.left-bar {
+			background: red;
+			width: 25%;
+			float: left;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.main {
+			background: blue;
+			width: 75%;
+			float: right;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">My logo</div>
+		<div class="menu">
+			<div class="menu-item">Link 1</div>
+			<div class="menu-item">Link 2</div>
+		</div>
+	</div>
+
+	<div class="game-list">
+		<div class="game">Game 1</div>
+		<div class="game">Game 1</div>
+		<div class="game">Game 1</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="content">
+		<div class="left-bar">
+			Something <br>
+			Something <br>
+			Something <br>
+			Something <br>
+		</div>
+		<div class="main">Main</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>
