@@ -61,10 +61,11 @@
 			box-sizing: border-box;
 		}
 		.nevs {
+            font-size: 20px;
+            color: #DAA520;
 			margin-top: 100px;
-			border: 2px solid #000000;
-			padding-bottom:	1100px;
-			background: #000000;
+            margin-bottom: 30px;
+			background: rgba(0, 0, 0, 0.6);
 			width: 75%;
 			float: right;
 			padding: 1px;
@@ -78,18 +79,10 @@
 
 		}
 
-
-
-
-
-
-
-
-
-
-
-
-
+        .newssi{
+            margin-bottom: 10px;
+            border-bottom:30px solid #0d0d0d ;
+        }
 
 
 
@@ -115,7 +108,6 @@
 		<img src="./imiges/270px-Sekiro_Shadows_Die_Twice.jpg" class="game"></img>
 		<img src="./imiges/270px-Логотип_игры_PlayerUnknown's_Battlegrounds.jpg" class="game"></img>
 		<img src="./imiges/10809-22-optimize_a.jpg" class="game"></img>
-		<img src="./imiges/1555417899_56gh.jpg" class="game"></img>
 		<img src="./imiges/klyuch-dlya-fallout-76-ua_006_300_300.jpg" class="game"><div class="text-больше">больше></div></img>
 		
 		<div class="clearfix"></div>
@@ -128,7 +120,13 @@
 			Something <br>
 			Something <br>
 		</div>
-		<div class="nevs">nevs</div>
+		<div class="nevs">{% for news in news %}<div class="newssi">
+            <div>{{news.title}}</div><br>
+            <div>{{news.image}}</div><br>
+            <div>{{news.text}}</div><br>
+        </div>{% endfor %}
+
+        </div>
 		<div class="clearfix"></div>
 	</div>
 </body>
